@@ -28,7 +28,7 @@ var start = function(port, delegator) {
 				request = JSON.parse(data);
 				delegator.handle(request, socket);
 			}
-			catch (var e) {
+			catch (e) {
 				console.log("server: could not parse data - " + data);
 			}
 		});
